@@ -74,7 +74,6 @@ void printQueue(Queue* q) {
         printf("%d ", now->n);
         now = now->next;
     }
-    printf(" ");
 }
 
 // Menghitung Median dari Linked List yang sudah diurutkan
