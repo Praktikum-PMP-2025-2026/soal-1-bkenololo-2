@@ -74,7 +74,7 @@ void printQueue(Queue* q) {
         printf("%d ", now->n);
         now = now->next;
     }
-    printf("\n");
+    printf(" ");
 }
 
 // Menghitung Median dari Linked List yang sudah diurutkan
@@ -121,7 +121,7 @@ int main() {
     }
     
     // Menampilkan output sesuai format yang diminta
-    printf("COUNT %d", count);
+    printf("COUNT %d ", count);
     
     bubble_sort(&data, count);
     
