@@ -88,7 +88,8 @@ double getMedian(Queue* q, int count) {
         for (int i = 0; i < mid; i++) {
             curr = curr->next;
         }
-        return (double)curr->n;
+        int value = curr->n;
+        return value;
     } 
     // Jika jumlah data genap
     else {
@@ -105,6 +106,7 @@ double getMedian(Queue* q, int count) {
 int main() {
     int n;
     int count = 0;
+    int status;
     Queue data;
     
     initQueue(&data);
@@ -127,7 +129,10 @@ int main() {
     printf("SORTED ");
     printQueue(&data);
     
-    printf("MEDIAN %.0f", getMedian(&data, count));
-    
+    if(count%2 == 0){
+        printf("MEDIAN %.2f", getMedian(&data, count));
+    }else{
+        printf("MEDIAN %.0f", getMedian(&data, count));
+    }
     return 0;
 }
