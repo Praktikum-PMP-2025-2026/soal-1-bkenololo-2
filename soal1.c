@@ -127,7 +127,7 @@ int main() {
     printf("SORTED ");
     printQueue(&data);
     
-    printf("MEDIAN %.2f", getMedian(&data, count));
+    printf("MEDIAN %.0f", getMedian(&data, count));
     
     return 0;
 }
